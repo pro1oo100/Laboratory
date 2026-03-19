@@ -3,7 +3,7 @@
 #include "math.h"
 #include "circle.h"
 #include "ractangle.h"
-//#include "trapezoid.h"
+#include "trapezoid.h"
 
 int main() {
 	std::cout << "1-Прямоугольник" << std::endl
@@ -25,7 +25,7 @@ int main() {
 		circle();
 		break;
 	case figures::TRAPEZOID:
-//		trapezoid();
+		trapezoid();
 		break;
 	default:
 		std::cout << "Ошибка нужны цифры от 1 до 4" << std::endl;

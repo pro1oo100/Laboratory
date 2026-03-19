@@ -22,7 +22,7 @@ int main() {
 //		math::testTriangle();
 		break;
 	case figures::CIRCLE:
-//		circle();
+		circle();
 		break;
 	case figures::TRAPEZOID:
 //		trapezoid();

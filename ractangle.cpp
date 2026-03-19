@@ -1,14 +1,14 @@
 #include "ractangle.h"
 #include <iostream>
 #include <iomanip>
+#include <cmath>
 void ractangle()
 {
-    double length = 0, width  = 0;
-
+    double length = 0, width = 0;
 
     std::cout << "Длина и ширина прямоугольника" << std::endl;
     if ((std::cin >> length && length > 0) &&
-    (std::cin >> width && width > -1)) {
+    (std::cin >> width && width > 0)) {
         std::cout << std::fixed << std::setprecision(2) << "Периметр = "
                   << 2 * (length + width) << std::endl;
 
@@ -22,4 +22,3 @@ void ractangle()
         std::cout << "Ошибка, сторона должна быть > 0" << std::endl;
     }
 }
-

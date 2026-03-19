@@ -2,7 +2,7 @@
 #include "figures.h"
 //#include "math.h"
 #include "circle.h"
-//#include "ractangle.h"
+#include "ractangle.h"
 //#include "trapezoid.h"
 
 int main() {
@@ -16,13 +16,13 @@ int main() {
 
 	switch (input) {
 	case figures::RECTANGLE:
-//		ractangle();
+		ractangle();
 		break;
 	case figures::TRIANGLE:
 //		math::testTriangle();
 		break;
 	case figures::CIRCLE:
-		circle();
+//		circle();
 		break;
 	case figures::TRAPEZOID:
 //		trapezoid();

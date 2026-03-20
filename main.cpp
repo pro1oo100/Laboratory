@@ -1,6 +1,6 @@
 #include <iostream>
 #include "figures.h"
-//#include "math.h"
+#include "math.h"
 #include "circle.h"
 #include "ractangle.h"
 #include "trapezoid.h"
@@ -19,7 +19,7 @@ int main() {
 		ractangle();
 		break;
 	case figures::TRIANGLE:
-//			math::testTriangle();
+		math::testTriangle();
 		break;
 	case figures::CIRCLE:
 		circle();

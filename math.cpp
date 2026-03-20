@@ -6,7 +6,7 @@ namespace math {
         return this->a + this->b + this->c;
     }
 
-    double Triangle::Area() const {
+    double Triangle::Area() const { // Возвращяет плозадь треугольника
         double p = this->Perimeter() / 2.0;
         return std::sqrt(p * (p - a) * (p - b) * (p - c));
     }

@@ -1,8 +1,8 @@
 #include "ractangle.h"
 #include <iostream>
 #include <iomanip>
-#include <cmath>
-void ractangle()
+//#include <cmath>
+void ractangle() // 123456789
 {
     double length = 0, width = 0;
 

@@ -17,13 +17,35 @@ void trapezoid() {
     std::cout << "Высота h: ";
     std::cin >> heightValue;
 
-    // Проверка на отрицательные значения и ноль
     if (baseFirst <= 0 || baseSecond <= 0 || sideLeft <= 0 || sideRight <= 0 || heightValue <= 0) {
         std::cout << "Ошибка: все параметры должны быть положительными числами!" << std::endl;
         return;
     }
 
-    // Если всё хорошо, вычисляем и выводим результат
+    if (heightValue > sideLeft || heightValue > sideRight) {
+        std::cout << "Ошибка: высота не может быть больше боковых сторон!" << std::endl;
+        return;
+    }
+
+    if (baseFirst + baseSecond <= sideLeft + sideRight) {
+        std::cout << "Ошибка: сумма оснований должна быть меньше суммы боковых сторон" << std::endl;
+        return;
+    }
+
+    double baseDiff = baseFirst - baseSecond;
+    if (baseDiff < 0) baseDiff = -baseDiff;
+
+    if (baseDiff >= sideLeft + sideRight) {
+        std::cout << "Ошибка: разница оснований слишком большая" << std::endl;
+        return;
+    }
+
+    double halfDiff = baseDiff / 2.0;
+    if (sideLeft <= halfDiff || sideRight <= halfDiff) {
+        std::cout << "Ошибка: боковые стороны слишком короткие" << std::endl;
+        return;
+    }
+
     std::cout << std::fixed << std::setprecision(2);
     std::cout << "Периметр = " << baseFirst + baseSecond + sideLeft + sideRight << std::endl;
     std::cout << "Площадь = " << ((baseFirst + baseSecond) / 2.0) * heightValue << std::endl;

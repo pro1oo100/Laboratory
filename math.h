@@ -23,5 +23,5 @@ namespace math {
     };
 
     void testTriangle();
-};
+}; // for screnshoot
 
